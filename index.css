@@ -1,0 +1,143 @@
+@import url(https://db.onlinewebfonts.com/c/fd6fa80f1e3345834599de891cca3f4c?family=OCR+A+Extended);
+
+@font-face {
+  font-family: OCR A Extended;
+  src: url(/fonts/OCRAEXT.TTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-container {
+  margin-top: none;
+ height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(2, 0, 0, 0.726), rgba(0, 0, 0, 0.9)),
+    url(./images/Digital-Student-ID-CardsOnline.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+ 
+}
+
+.card-content {
+  margin-top: -15%;
+  height: 375px;
+  width: 250px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px #5a5a5a2a;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(0, 0, 0, 0.034)
+    ),
+    url(./images/desktop-wallpaper-leaves-in-2020-green-leaf-green-nature-green-abstract-green-nature.jpg);
+
+  background-size: 100% 100%;
+
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background-image {
+  margin: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(255, 255, 255, 0);
+}
+.side-card {
+  width: 20%;
+  height: 100%;
+  /* background-color: greenyellow; */
+}
+
+.side-title {
+  left: -130%;
+  position: absolute;
+  font-family: "OCR A Extended", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  text-shadow: 0px 0px 0px #000;
+  word-spacing: 15px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  text-wrap: nowrap;
+  z-index: 99;
+  height: 100%;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+  text-align: right;
+  z-index: 10;
+}
+
+.student-name-text,
+.student-id-text {
+  margin: 0;
+  font-family: "OCR A Extended", sans-serif;
+  font-size: 10px;
+  font-weight: bolder;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgb(1, 61, 1);
+}
+
+.name-text,
+.id-text {
+  margin: 0;
+  font-family: "OCR A Extended", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+.name-text {
+  margin-bottom: 10px;
+}
+
+.student-qr {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.student-qr img {
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 0px #000;
+}
+
+.student-img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.student-img img {
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 0px #000;
+}
+
+.exp-date {
+  float: right;
+  font-size: 20px;
+  font-family: "OCR A Extended", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(240, 240, 240);
+  text-shadow: 1px 1px 0px #000;
+}

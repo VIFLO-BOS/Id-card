@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="card-container ">
+    <div class="card-content">
+      <form action="" class="col">
+        <input type="email" id="email" class=" form-control col-6   mt-1" placeholder="Enter your email">
+        <input type="password" id="password" class="form-control col-6  mt-1" placeholder="******">
+        <button class="form-control btn col-6  mt-1 mb-1 btn-outline-primary" id="submit">submit</button>
+      </form>
+
+      <!-- //this is for the coat of arm watermark -->
+      <div class="background-image">
+        <img src="./images/coat-of-arms-of-nigeria-flag-of-nigeria-national-symbol-symbol-thumbnail.jpg" alt=""
+          width="95px" />
+      </div>
+      <div class="card-details" id="card-details">
+
+        <!---this is the side card-->
+        <div class="side-card">
+          <p class="side-title">Digital Student Id</p>
+        </div>
+        <!--- the side card ends here-->
+
+        <!---this is the main card-->
+        <div class="main-card">
+          <!-- this is for the student name -->
+          <div class="student-name">
+            <h6 class="student-name-text">Name:</h6>
+            <p class="name-text" data-student-name>Bankole Olaniyi Sunday</p>
+          </div>
+
+          <!-- this is the student id -->
+          <div class="student-id">
+            <h6 class="student-id-text">Student Id:</h6>
+            <p class="id-text">20/0345kw/001</p>
+          </div>
+          <!-- this is for the QR code -->
+          <div class="student-qr ">
+            <img alt="" src="./images/Capture.PNG" id="qrCode" width="90px" />
+          </div>
+          <!-- this is for the passport -->
+          <div class="student-img">
+            <img src="./images/man-face-clipart-design-illustration-free-png.webp" alt="" data-student-passport
+              width="90px" />
+          </div>
+          <div class="expiring-details">
+            <h6 class="exp-date" data-exp-date>2021 / 2026</h6>
+          </div>
+        </div>
+        <!---the main card end here-->
+      </div>
+      <div class="text-center">
+        <button class="btn mt-2 btn-sm text-center w-100 btn-outline-light" id="download">Download</button>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
